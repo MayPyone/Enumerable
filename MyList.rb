@@ -1,7 +1,18 @@
+require_relative 'MyEnumerable'
 class MyList
 
-@list = []
+include MyEnumerable
 
-#each method
+attr_reader :list
+
+def initialize(*elements)
+  @list = elements
+end
+
+def each
+  @list.each do |element|
+    yield element
+  end
+end
 
 end
