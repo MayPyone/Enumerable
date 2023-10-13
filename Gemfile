@@ -3,3 +3,5 @@ gem 'rubocop', '>= 1.0', '< 2.0'
 
 gem 'sinatra'
 gem 'sqlite3'
+
+gem 'syntax_tree'
