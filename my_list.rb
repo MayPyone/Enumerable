@@ -1,6 +1,6 @@
 require_relative 'my_enumerable'
 class MyList
-  include my_enumerable
+  include My_Enumerable
 
   attr_reader :list
 
